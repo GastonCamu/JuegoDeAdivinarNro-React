@@ -22,7 +22,7 @@ function Inicio() {
   return (
     <div className='inicio'>
       <video className='fondo' autoPlay loop muted>
-        <source src="/public/assets/videos/fondo-estrellas.mp4" type="video/mp4" />
+        <source src="/assets/videos/fondo-estrellas.mp4" type="video/mp4" />
         Tu navegador no soporta videos.
       </video>
       <h1>Bienvenido Jugador</h1>
