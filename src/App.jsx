@@ -4,7 +4,7 @@ import Inicio from './pages/Inicio/Inicio.jsx';
 import Juego from './pages/Juego/Juego.jsx';
 import TablaPuntos from './pages/TablaPuntos/TablaPuntos.jsx';
 
-import './styles/index.css'
+import './styles/Index.css'
 
 function App() {
 
