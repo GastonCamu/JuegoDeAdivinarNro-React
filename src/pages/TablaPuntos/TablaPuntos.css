@@ -1,0 +1,64 @@
+.puntos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-2);
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.puntos h1 {
+    font-size: 3vw;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-5);
+}
+
+.puntos p {
+    color: var(--color-5);
+    font-size: 1.8vw;
+}
+
+.puntos table {
+    width: 80%;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+.puntos th, 
+.puntos td {
+    padding: 10px;
+    border: 1px solid var(--color-6);
+}
+
+.puntos th {
+    background-color: var(--color-5); 
+    font-weight: bold;
+}
+
+.puntos tr:nth-child(even) {
+    background-color: var(--color-5); 
+}
+
+.puntos tr:hover {
+    background-color: var(--color-4);
+}
+
+button.button-volver {
+    margin-top: 3vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    padding: 0.4vw 1vw;
+    cursor: pointer;
+    background-color: var(--color-4);
+    border-radius: 10px;
+}
+
+button.button-volver:hover {
+    background-color: var(--color-3);
+}

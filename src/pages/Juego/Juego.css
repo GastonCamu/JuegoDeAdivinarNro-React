@@ -1,0 +1,161 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--color-3);
+    z-index: -1;
+}
+
+.div-estrellas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.span-estrella {
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    position: absolute;
+    clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+    );
+    animation: brillo 1.5s infinite alternate;
+    opacity: 0.8;
+}
+
+@keyframes brillo {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        opacity: 0.2;
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+        opacity: 1;
+    }
+}
+
+.juego {
+    margin: 5vw auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 30vw;
+    background-color: var(--colorFondo-1);
+    color: var(--color-5);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.juego h1 {
+    font-size: 3vw;
+}
+
+.juego p {
+    font-size: 1.6vw;
+}
+
+.juego input {
+    width: 4vw;
+    height: 3vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--color-5);
+    text-align: center;
+}
+
+p.p-intentosRestantes {
+    font-size: 1.5vw;
+}
+p.p-intentosRestantes span {
+    font-weight: 800;
+    color: var(--color-4);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+button.button-adivinar {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    padding: 0.5vw 1.5vw;
+    cursor: pointer;
+    background-color: var(--color-4);
+    border-radius: 10px;
+    margin: 1vw 0;
+}
+
+button.button-adivinar:hover {
+    background-color: var(--color-3);
+}
+
+p.p-mensaje {
+    background-color: var(--color-5);
+    color: var(--color-1);
+    font-weight: bolder;
+    padding: 1vw;
+    border-radius: 10px;
+}
+
+h2.mensajeGanarOPerder {
+}
+
+h3.mensajePuntuacion {
+    font-size: 1.5vw;
+}
+
+h3.mensajePuntuacion span {
+    font-size: 1.8vw;
+    font-weight: 800;
+    color: var(--color-3);
+}
+
+button.button-reiniciar {
+    font-size: 1.3vw;
+    font-weight: bolder;
+    padding: 0.4vw 1vw;
+    cursor: pointer;
+    background-color: var(--color-3);
+    border-radius: 10px;
+}
+
+button.button-reiniciar:hover {
+    background-color: var(--color-2);
+}
+
+button.button-tablaPuntos {
+    font-size: 1.2vw;
+    font-weight: bolder;
+    padding: 0.5vw 1.5vw;
+    cursor: pointer;
+    background-color: var(--color-6);
+    border-radius: 10px;
+}
+
+button.button-tablaPuntos:hover {
+    background-color: var(--color-7);
+}
